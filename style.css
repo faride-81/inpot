@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: rgb(7, 14, 53);
+    font-family: 'iranyekan_numbers','iranyekan';
+}
+.form { 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.form .center {
+    width: 5%;
+}
+.form .center img {
+    width: 100%;
+}
+form {
+    border-radius: 00.5rem;
+    width: 350px;
+    display: inline-block;
+    padding: 2rem;
+
+}
+.form .form__text1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.form .form__text2 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+.form .form__text3 {
+    margin-bottom: 0.75rem;
+    color: #6e6c6c;
+    font-size: 0.8rem;
+}
+.form .form__text4 {
+    text-align: start;
+    color: white;
+}
+.form .form__flex__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form .form__flex__input .input__svg {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+}
+.form .form__flex__input .input__svg svg {
+}
+.form .form__flex__input .input__input {
+    width: 78%;
+}
+.form .form__flex__input .input__input input {
+    padding: 0.6rem 2.5rem;
+    margin-bottom: 1.5rem;
+    border: rgb(24, 31, 59) solid 2px;
+    background-color: rgb(24, 31, 59);
+    width: 100%;
+    border-radius: 0.2rem;
+}
+.form .form__button {
+    padding: 0.5rem 0.2rem;   
+    width: 100%;
+    background-color: rgb(64, 106, 252);
+    border-radius: 0.2rem;
+}
+.form .form__button button {
+    background-color: rgb(64, 106, 252);
+    border: unset;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
