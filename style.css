@@ -1,3 +1,15 @@
+@font-face {
+    font-family: PlusJakartaSans; 
+    src: url('./font/__MACOSX/PlusJakartaSans-2.7.1/ttf.eot'), 
+    url('./font/__MACOSX/PlusJakartaSans-2.7.1/variable.woof'),
+    url('./font/__MACOSX/PlusJakartaSans-2.7.1/ttf.eot'),
+    url(./font/PlusJakartaSans-2.7.1/ttf.eot),
+    url(./font/PlusJakartaSans-2.7.1/ttf.woof),
+    url(./font/PlusJakartaSans-2.7.1/ttf.woof2),
+    url(./font/PlusJakartaSans-2.7.1/variable.eot),
+    url(./font/PlusJakartaSans-2.7.1/variable.woof),
+    url(./font/PlusJakartaSans-2.7.1/variable.woof2);
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +18,7 @@ a {
     text-decoration: none;
 }
 body {
+    font-family: PlusJakartaSans; 
     background-color: rgb(7, 14, 53);
 }
 .form { 
@@ -57,14 +70,14 @@ form {
 }
 .form .form__flex__input .input__svg {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 13px;
 }
 .form .form__flex__input .input__svg svg {
-    color: rgb(32, 4, 52);
+    color: #6e6c6c;
 }
 .form .form__flex__input .input__input {
-    width: 78%;
+    width: 76%;
 }
 .form .form__flex__input .input__input input {
     padding: 0.6rem 2.5rem;
@@ -72,20 +85,19 @@ form {
     color: #6e6c6c;
     border: rgb(24, 31, 59) solid 2px;
     background-color: rgb(24, 31, 59);
+    font-size: 1rem;
     width: 100%;
     border-radius: 0.2rem;
 }
 .form .form__button {
-    padding: 0.5rem 0.2rem;   
+    padding: 0.7rem 0.2rem;   
     width: 100%;
     background-color: rgb(64, 106, 252);
-    border-radius: 0.2rem;
-}
-.form .form__button button {
-    background-color: rgb(64, 106, 252);
     border: unset;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
     color: white;
+    border-radius: 0.2rem;
 }
 @media (max-width:600px) {
     .form { 
