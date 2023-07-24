@@ -1,14 +1,6 @@
 @font-face {
     font-family: PlusJakartaSans; 
-    src: url('./font/__MACOSX/PlusJakartaSans-2.7.1/ttf.eot'), 
-    url('./font/__MACOSX/PlusJakartaSans-2.7.1/variable.woof'),
-    url('./font/__MACOSX/PlusJakartaSans-2.7.1/ttf.eot'),
-    url(./font/PlusJakartaSans-2.7.1/ttf.eot),
-    url(./font/PlusJakartaSans-2.7.1/ttf.woof),
-    url(./font/PlusJakartaSans-2.7.1/ttf.woof2),
-    url(./font/PlusJakartaSans-2.7.1/variable.eot),
-    url(./font/PlusJakartaSans-2.7.1/variable.woof),
-    url(./font/PlusJakartaSans-2.7.1/variable.woof2);
+    src: url('./font/PlusJakartaSans-Medium.ttf');
 }
 * {
     margin: 0;
