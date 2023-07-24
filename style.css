@@ -37,28 +37,29 @@ form {
     font-size: 2rem;
     letter-spacing: 0.1rem;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
 .form .form__text2 {
+    margin-bottom: 0.7rem;
     color: white;
     font-size: 1.4rem;
-    margin-bottom: 0.25rem;
 }
 .form .form__text3 {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
     color: #6e6c6c;
     font-size: 0.8rem;
 }
 .form .form__text4 {
     text-align: start;
     color: white;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
 }
 .form .form__flex__input {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 .form .form__flex__input .input__svg {
     position: absolute;
@@ -70,10 +71,10 @@ form {
 }
 .form .form__flex__input .input__input {
     width: 76%;
+    margin-bottom: 1rem;
 }
 .form .form__flex__input .input__input input {
     padding: 0.6rem 2.5rem;
-    margin-bottom: 1.5rem;
     color: #6e6c6c;
     border: rgb(24, 31, 59) solid 2px;
     background-color: rgb(24, 31, 59);
