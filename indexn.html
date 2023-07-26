@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./stylen.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <!-- logo -->
+        <div class="center"><img src="./icon.png"></div>
+        <!-- logo-finish -->
+        <!-- form -->
+        <form action="">
+            <div class="form__text1"><b>Server Mart</b></div>
+            <div class="form__text2">Verify your email</div>
+            <div class="form__text3">Please enter the 4-digit code we’ve sent to laxsdf2213@gmail.com</div>
+            <!-- input -->
+            <fieldset class='number-code'>
+                <div>
+                  <input name='code' class='code-input' required/>
+                  <input name='code' class='code-input' required/>
+                  <input name='code' class='code-input' required/>
+                  <input name='code' class='code-input' required/>
+                </div>
+            </fieldset>
+            <!-- finish input -->
+            <!--botton  -->
+            <button class="form__button" type="submit">Verify</button>
+            <!--botton-finish  -->    
+        </form>
+        <!-- form-finish -->
+    </div>
+</body>
+<script>
+    const inputElements = [...document.querySelectorAll('input.code-input')]
+
+inputElements.forEach((ele,index)=>{
+  ele.addEventListener('keydown',(e)=>{
+    if(e.keyCode === 8 && e.target.value==='') inputElements[Math.max(0,index-1)].focus()
+  })
+  ele.addEventListener('input',(e)=>{
+    const [first,...rest] = e.target.value
+    e.target.value = first ?? ''
+    const lastInputBox = index===inputElements.length-1
+    const didInsertContent = first!==undefined
+    if(didInsertContent && !lastInputBox) {
+      inputElements[index+1].focus()
+      inputElements[index+1].value = rest.join('')
+      inputElements[index+1].dispatchEvent(new Event('input'))
+    }
+  })
+})
+</script>
+</html>

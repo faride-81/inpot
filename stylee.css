@@ -1,0 +1,63 @@
+.text a {
+    color: rgb(85, 89, 101);
+}
+.form .checkbox {
+    display: flex;
+}
+.text {
+    margin-bottom: 2rem !important;
+    margin-top: -0.9rem;
+    text-align: end !important;
+}
+.form .form__text a {
+    color: rgb(64, 106, 252);
+}
+.form .flex {
+    width: 350px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    color: rgb(85, 89, 101);
+}
+.form .flex hr {
+    width: 40%;
+    color: rgb(85, 89, 101) !important;
+}
+.google {
+    border: rgb(85, 89, 101) 1px solid;
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    width: 355px;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+}
+.google .svg {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.google svg {
+    color: white;
+    width: 100%;
+}
+.google a {
+    text-align: start;
+    width: 70%;
+    color: white;
+}
+.google:hover {
+    background-color: white;
+}
+.google:hover a {
+    color: rgb(7, 14, 31);
+}
+.google:hover svg {
+    color: rgb(7, 14, 31);
+}
+p {
+    margin-left: 10px;
+}

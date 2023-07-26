@@ -1,0 +1,13 @@
+.background {
+    background-color: rgb(19, 26, 42);
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+.form .center {
+    margin: 0 auto;
+}
+.form .form__text {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
