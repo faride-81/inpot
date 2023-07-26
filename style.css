@@ -92,6 +92,9 @@ form {
     color: white;
     border-radius: 0.2rem;
 }
+.form .form__button a {
+    color: white;
+}
 @media (max-width:600px) {
     .form { 
         display: block;

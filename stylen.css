@@ -1,9 +1,16 @@
 .number-code {
     border: unset;
+}
+.number-code div {
     display: grid;
-    grid-template-columns: 15% 15% 15% 15%;
-    width: 100%;
+    grid-template-columns: 20% 20% 20% 20%;
+    width: 60%;
+    margin: 2rem auto;
+    height: 35px;
+    gap: 10px;
+    
 }
 .number-code input {
     width: 100%;
+    text-align: center;
 }
