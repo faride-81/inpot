@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    <link href="./stylee.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
+    <link href="./stylelogin.css" rel="stylesheet">
+    <link href="./styleforgotpassword.css" rel="stylesheet">
 </head>
 <body>
     <div class="form">
         <!-- logo -->
-        <div class="center"><img src="./icon.png"></div>
+        <div class="center"><img src="./Group (1).svg"></div>
         <!-- logo-finish -->
         <!-- form -->
-        <form action="" name="myform" onsubmit="return myfunction()">
+        <form action="./index.html" name="myform" onsubmit="return myfunction()">
             <div class="form__text1"><b>Server Mart</b></div>
             <div class="form__text2">Welcome back</div>
             <div class="form__text3">First time here? <a href="#">Sign Up.</a></div>
@@ -28,7 +28,7 @@
                 <div class="input__svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/></svg></div>
                 <div class="input__input"><input type="password" placeholder="Password" name="mypassword"></div>
             </div>
-            <div class="form__text3 text"><a href="./index.html">Forgot password ?</a></div>
+            <div class="form__text3 text"><a href="./indexforgotpassword.html">Forgot password ?</a></div>
             <!--botton  -->
             <button class="form__button" type="submit" onclick="mybutton">Sing in</button>
             <!--botton-finish  -->    
@@ -53,8 +53,6 @@
             alert("please enter your email");
             return false;
         }
-    }
-    function myfunction() {
         var x = document.forms["myform"]["mypassword"].value;
         if (x == "")
         {

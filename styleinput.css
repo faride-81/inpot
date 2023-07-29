@@ -13,4 +13,8 @@
 .number-code input {
     width: 100%;
     text-align: center;
+    background-color: rgb(24, 31, 59);
+    border: unset;
+    color: white;
+    border-radius: 0.2rem;
 }
