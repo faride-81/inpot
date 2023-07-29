@@ -14,23 +14,23 @@
         <div class="center"><img src="./icon.png"></div>
         <!-- logo-finish -->
         <!-- form -->
-        <form action="">
+        <form action="" name="myform" onsubmit="return myfunction()">
             <div class="form__text1"><b>Server Mart</b></div>
             <div class="form__text2">Welcome back</div>
             <div class="form__text3">First time here? <a href="#">Sign Up.</a></div>
             <div class="form__text4">Email</div>
             <div class="form__flex__input">
                 <div class="input__svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg></div>
-                <div class="input__input"><input type="email" placeholder="Email"></div>
+                <div class="input__input"><input type="email" placeholder="Email" name="myinput"></div>
             </div>
             <div class="form__text4">Password</div>
             <div class="form__flex__input">
                 <div class="input__svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/></svg></div>
-                <div class="input__input"><input type="password" placeholder="Password"></div>
+                <div class="input__input"><input type="password" placeholder="Password" name="mypassword"></div>
             </div>
             <div class="form__text3 text"><a href="./index.html">Forgot password ?</a></div>
             <!--botton  -->
-            <button class="form__button" type="submit">Sing in</button>
+            <button class="form__button" type="submit" onclick="mybutton">Sing in</button>
             <!--botton-finish  -->    
         </form>
         <!-- form-finish -->
@@ -45,4 +45,31 @@
         </section>
     </div>
 </body>
+<script>
+    function myfunction() {
+        var x = document.forms["myform"]["myinput"].value;
+        if (x == "")
+        {
+            return false;
+            alert("please enter your email");
+        }
+        // else{
+        //     function mybutton() {
+        //         window.location.assign("https://toplearn.com/courses/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D9%82%D8%AF%D9%85%D8%A7%D8%AA%DB%8C-%D8%AA%D8%A7-%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA")  
+        //     }
+        // }
+    }
+    function myfunction() {
+        var x = document.forms["myform"]["mypassword"].value;
+        if (x == "")
+        {
+            alert("please enter your password");
+        }
+        // else{
+        //     function mybutton() {
+        //         window.location.assign("https://toplearn.com/courses/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D8%B3%D8%A7%DB%8C%D8%AA/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D9%82%D8%AF%D9%85%D8%A7%D8%AA%DB%8C-%D8%AA%D8%A7-%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA%D9%87-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA")  
+        //     }
+        }
+    }
+</script>
 </html>
