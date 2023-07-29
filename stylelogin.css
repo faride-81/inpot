@@ -23,7 +23,9 @@
 }
 .form .flex hr {
     width: 40%;
-    color: rgb(85, 89, 101) !important;
+    background-color: rgb(85, 89, 101) !important;
+    border: unset;
+    height: 2px;
 }
 .google {
     border: rgb(85, 89, 101) 1px solid;
