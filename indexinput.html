@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <link href="./styleforgotpassword.css" rel="stylesheet">
-    <link href="./styleinput.css" rel="stylesheet">
 </head>
 <body>
     <div class="form">
@@ -15,9 +14,9 @@
         <!-- logo-finish -->
         <!-- form -->
         <form action="">
-            <div class="form__text1"><b>Server Mart</b></div>
-            <div class="form__text2">Verify your email</div>
-            <div class="form__text3">Please enter the 4-digit code we’ve sent to laxsdf2213@gmail.com</div>
+            <h1><b>Server Mart</b></h1>
+            <h2>Verify your email</h2>
+            <h5>Please enter the 4-digit code we’ve sent to <span>laxsdf2213@gmail.com</span></h5>
             <!-- input -->
             <fieldset class='number-code'>
                 <div>
@@ -37,9 +36,8 @@
 </body>
 <script>
     const inputElements = [...document.querySelectorAll('input.code-input')]
-
-inputElements.forEach((ele,index)=>{
-  ele.addEventListener('keydown',(e)=>{
+    inputElements.forEach((ele,index)=>{
+    ele.addEventListener('keydown',(e)=>{
     if(e.keyCode === 8 && e.target.value==='') inputElements[Math.max(0,index-1)].focus()
   })
   ele.addEventListener('input',(e)=>{
